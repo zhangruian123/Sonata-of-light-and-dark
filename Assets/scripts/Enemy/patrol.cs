@@ -17,6 +17,7 @@ public class patrol : MonoBehaviour
     public LayerMask npcLayer;
     public PlayerHealth playerHealth;
     public Collider2D colliderToDisable;
+    public float damage;
 
     void Start()
     {
@@ -129,7 +130,7 @@ public class patrol : MonoBehaviour
                 // 如果是玩家，调用 TakeDamage 方法
                 if (playerHealth != null)
                 {
-                    playerHealth.TakeDamage(20f); // 这里的 20f 是碰撞时造成的伤害量，你可以根据需要调整
+                    playerHealth.TakeDamage(damage); // 这里的 20f 是碰撞时造成的伤害量，你可以根据需要调整
                     anim.SetBool("ReachPlayer", true);
                     colliderToDisable.enabled = false;
                 }

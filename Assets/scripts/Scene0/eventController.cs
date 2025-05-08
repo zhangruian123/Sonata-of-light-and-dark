@@ -7,7 +7,7 @@ public class eventController : MonoBehaviour
 {
     public void LoadScene1()
     {
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("Scene0.5");
     }
 
     public void EndGame()

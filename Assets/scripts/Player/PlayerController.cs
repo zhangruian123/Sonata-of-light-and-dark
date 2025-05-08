@@ -70,9 +70,6 @@ public class PlayerController : MonoBehaviour
         {
             checkSecondAttack();
         }
-
-        
-
         UpdateSlide();
         UpdateSprint();
     }
